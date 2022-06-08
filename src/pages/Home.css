@@ -1,0 +1,99 @@
+/* Start Variables */
+:root {
+    --main-color: #19c8fa;
+    --transparent-color: rgb(15 116 143 / 70%);
+    --section-padding: 100px;
+  }
+  /* End Variables */
+  /* Start Global Rules */
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  .roots{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+      
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Open Sans", sans-serif;
+  }
+  a {
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  /* End Global Rules */
+  .home{
+      display: flex;
+      min-height: 100vh;
+      padding-top:20px ;
+      flex-direction: column;
+      
+      
+    }
+    .home .home_header{
+        display: flex;
+  }
+
+  .home .home_header a{
+    padding: 0 20px 0 0;
+    font-size:15px;
+
+  }
+  .home .home_header a:hover{
+text-decoration: underline;    
+
+  }
+  /* body */
+  .home_body{
+    flex: 1;
+    display: flex;
+    margin-top: 10%;
+    --ntp-logo-height: 200px;
+
+    flex-direction: column;
+    }
+
+  .home_body .logo{
+    height: 100px;
+    background-size: cover;
+    object-fit: contain;
+  }
+
+  .input-container{
+    margin-top: 38px;
+  }
